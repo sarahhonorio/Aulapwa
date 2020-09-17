@@ -7,6 +7,15 @@
     <link rel="manifest" href="manifest.json">
     <link rel="shortcut icon" href="ig/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script>
+        if('serviceWorker' in navigator){
+            navigator.serviceWorker.register('/sw.js').then(function(){
+                console.log('Service worker registrado com sucesso!')
+            }).catch(function(){
+                console.log('Registro do service worker não realizado!')
+            })
+        }
+    </script>
 </head>
 <body>
     
@@ -19,6 +28,7 @@
         </ul>
         <h2>Sarah Honório</h2>
     </div>
-    
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
