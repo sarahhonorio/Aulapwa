@@ -1,1 +1,15 @@
-{  "name": "Sarah Honório - estudante de informática",  "short_name": "Sarah Honório",  "lang": "pt-BR",  "start_url": "./",  "scope": "./?",  "display": "fullscreen",  "theme_color": "#cb062e",  "icons": [    {      "src": "img/icon512.png",      "sizes": "512x512",      "type": "image/png"    },    {      "src": "img/icon48.png",      "sizes": "48x48",      "type": "image/png"    }  ],  "background_color": "#000000"}
+{  "name": "Sarah Honório - estudante de informática",  
+    "short_name": "Sarah Honório",  
+    "lang": "pt-BR",  
+    "start_url": "./",  
+    "scope": "./?",  
+    "display": "fullscreen",  
+    "theme_color": "#cb062e",  
+    "icons": [    {      "src": "img/icon512.png",      
+        "sizes": "512x512",      
+        "type": "image/png"    },    
+        {      "src": "img/icon48.png",      
+            "sizes": "48x48",      
+            "type": "image/png"    }  ],  
+            "background_color": "#000000"
+}
