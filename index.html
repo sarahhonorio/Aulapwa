@@ -6,14 +6,31 @@
     <title>SarahHonorio</title>
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel = "manifest" href = "manifest.json"> 
+
+<meta name = "mobile-web-app-capacity" content = "yes"> 
+<meta name = "apple-mobile-web-app-capacity" content = "sim"> 
+<meta name = "nome do aplicativo" content = "Sarah Honorio"> 
+<meta name = "apple-mobile-web-app-title" content = "Sarah Honorio"> 
+<meta name = "theme- color "content =" # d00639 "> 
+<meta name =" msapplication-navbutton-color "content =" # d00639 "> 
+<meta name =" apple-mobile-web-app-status-bar-style "content =" preto -translucent "> 
+<meta name =" msapplication-starturl "content =" ./ "> 
+<meta name ="janela de visualização "content =" width = device-width, initial-scale = 1, shrink-to-fit = no "> 
+
+<link rel =" icon "type =" image / png "size =" 512x512 "href =" https: //sarahhonorio.github.io/Aulapwa / ">
+<link rel = "apple-touch-icon" type = "image / png" size = "512x512" href = "https://sarahhonorio.github.io/Aulapwa/"> 
+<link rel = "icon" type = " imagem / png "tamanhos =" 48x48 "href =" https://sarahhonorio.github.io/Aulapwa/ "> 
+<link rel =" apple-touch-icon "type =" image / png "tamanhos =" 48x48 "href = "https://sarahhonorio.github.io/Aulapwa/">
     <script>
-        if('serviceWorker' in navigator){
-            navigator.serviceWorker.register('sw.js').then(function(){
-                console.log('Service worker registrado com sucesso!')
-            }).catch(function(){
-                console.log('Registro do service worker não realizado!')
+        if ("serviceWorker" in navigator) {
+    if (navigator.serviceWorker.controller) {
+        console.log("[Aplicativo] funcionário de serviço ativo encontrado, não há necessidade de registrar");
+    } else {
+        navigator.serviceWorker
+            .register("./sw.js", {
+                scope: "./"
             })
-        }
     </script>
 </head>
 <body class = "bg-danger">
